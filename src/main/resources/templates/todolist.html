@@ -24,7 +24,7 @@
 
                     <span th:text="${task.description}"></span>
 
-                    <form th:action="@{/todos/update}" method="post" style="display:inline;">
+                    <form th:action="@{/todos/update}" method="post" style="display:inline; width:40%;">
                         <input type="hidden" name="taskId" th:value="${task.id}"/>
                         <input type="text" name="newDescription" placeholder="수정할 내용" required />
                         <button type="submit">Update</button>
